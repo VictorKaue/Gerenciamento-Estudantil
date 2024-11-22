@@ -1,4 +1,4 @@
-package interface_grafica;
+package Model;
 
 abstract public class Pessoa {
 	String nome;

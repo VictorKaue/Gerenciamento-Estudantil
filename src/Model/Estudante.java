@@ -1,4 +1,4 @@
-package interface_grafica;
+package Model;
 
 public class Estudante extends Pessoa {
 	private int matricula;
