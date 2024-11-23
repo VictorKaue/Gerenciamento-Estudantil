@@ -1,30 +1,39 @@
 package Model;
 
-abstract public class Pessoa {
-	String nome;
-	int idade;
-	
-	public Pessoa(String nome, int idade) {
-		this.nome = nome;
-		this.idade = idade;
-	}
-	abstract public void exibirDados();
+public class Pessoa {
+    private int idPessoa;
+    private String nome; 
 
-	public String getNome() {
-		return nome;
-	}
+    public Pessoa() {
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public Pessoa(int idPessoa, String nome) {
+        this.idPessoa = idPessoa;
+        this.nome = nome;
+    }
 
-	public int getIdade() {
-		return idade;
-	}
+    public int getIdPessoa() {
+        return idPessoa;
+    }
 
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
+    public void setIdPessoa(int idPessoa) {
+        this.idPessoa = idPessoa;
+    }
 
-	
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "idPessoa=" + idPessoa +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }
+
