@@ -1,23 +1,17 @@
 package Model;
 
-public class Pessoa {
-    private int idPessoa;
-    private String nome; 
+public abstract class Pessoa {
+    private String nome;
+    private int idade;
 
     public Pessoa() {
+        this.nome = "";
+        this.idade = 0;
     }
 
-    public Pessoa(int idPessoa, String nome) {
-        this.idPessoa = idPessoa;
+    public Pessoa(String nome, int idade) {
         this.nome = nome;
-    }
-
-    public int getIdPessoa() {
-        return idPessoa;
-    }
-
-    public void setIdPessoa(int idPessoa) {
-        this.idPessoa = idPessoa;
+        this.idade = idade;
     }
 
     public String getNome() {
@@ -28,12 +22,13 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "idPessoa=" + idPessoa +
-                ", nome='" + nome + '\'' +
-                '}';
+    public int getIdade() {
+        return idade;
     }
-}
 
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public abstract void exibirDados();
+}

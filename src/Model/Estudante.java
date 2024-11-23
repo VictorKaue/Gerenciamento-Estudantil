@@ -1,15 +1,29 @@
 package Model;
 
 public class Estudante extends Pessoa {
-	private int matricula;
+    private String matricula;
 
-	public Estudante(String nome, int idade, int matricula) {
-		super(nome, idade);
-		this.matricula = matricula;
-	}
-	
-	public void exibirDados() {
-		
-	}
-	
+    public Estudante() {
+        super();
+        this.matricula = "";
+    }
+
+    public Estudante(String nome, int idade, String matricula) {
+        super(nome, idade);
+        this.matricula = matricula;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    //metodo de sobrescrita
+    @Override
+    public void exibirDados() {
+        System.out.println("Estudante: " + getNome() + ", Idade: " + getIdade() + ", Matrícula: " + matricula);
+    }
 }
