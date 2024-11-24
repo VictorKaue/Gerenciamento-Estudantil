@@ -4,26 +4,37 @@ public class Curso {
     private String nomeCurso;
     private int cargaHoraria;
     private Professor professorResponsavel;
-
+    private int id;
+    
     public Curso() {
         this.nomeCurso = "";
         this.cargaHoraria = 0;
         this.professorResponsavel = null;
     }
 
-    public Curso(String nomeCurso, int cargaHoraria, Professor professorResponsavel) {
+    public Curso(String nomeCurso, int cargaHoraria, Professor professorResponsavel, int id) {
         this.nomeCurso = nomeCurso;
         this.cargaHoraria = cargaHoraria;
         this.professorResponsavel = professorResponsavel;
+        this.id = id;
     }
 
     public String getNomeCurso() {
         return nomeCurso;
     }
 
-    public void setNomeCurso(String nomeCurso) {
+
+	public void setNomeCurso(String nomeCurso) {
         this.nomeCurso = nomeCurso;
     }
+
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
 
     public int getCargaHoraria() {
         return cargaHoraria;
