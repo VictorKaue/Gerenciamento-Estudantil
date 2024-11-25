@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import javax.management.RuntimeErrorException;
 
 public class Conexao {
-	private static final String URL = "";
+	private static final String URL = ""jdbc:mysql://localhost:3306/GerenciamentoEstudantil";
 	private static final String USER = "root";
 	private static final String PASSWORD = "admin123";
 	private static Connection conexao;
