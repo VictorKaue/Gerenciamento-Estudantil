@@ -9,7 +9,8 @@ public class Estudante extends Pessoa {
 	}
 	
 	public void exibirDados() {
-		
+		System.out.println("Nome: " + nome + "\nIdade: " + idade);
 	}
 	
+
 }
