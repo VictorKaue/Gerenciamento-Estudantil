@@ -1,4 +1,5 @@
-/DAO/
-/View/
-/Controller/
 /Model/
+/bancoDeDados/
+/controller/
+/mysql-connector-j-9.1.0.tar.gz
+/view/

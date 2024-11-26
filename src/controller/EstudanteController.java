@@ -14,7 +14,7 @@ public class EstudanteController {
 	}
 	
 	public boolean salvar(Estudante estudante) {
-		if(estudante.getMatricula()estudante == null || estudante.getMatricula().isEmpty()) {
+		if(estudante.getMatricula() == null || estudante.getMatricula().isEmpty()) {
 			return dao.inserir(estudante);
 		} else {
 			return dao.atualizar(estudante);
